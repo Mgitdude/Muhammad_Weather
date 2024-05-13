@@ -13,6 +13,9 @@
 		C60E3BCC256334DD007AC0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60E3BCB256334DD007AC0DD /* Assets.xcassets */; };
 		C60E3BCF256334DD007AC0DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C60E3BCE256334DD007AC0DD /* Preview Assets.xcassets */; };
 		C60E3BD2256334DD007AC0DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C60E3BD0256334DD007AC0DD /* LaunchScreen.storyboard */; };
+		C60E3BF525636567007AC0DD /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60E3BF425636567007AC0DD /* Weather.swift */; };
+		C60E3BF825644C00007AC0DD /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60E3BF725644C00007AC0DD /* WeatherViewModel.swift */; };
+		C60E3BFC25645A94007AC0DD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60E3BFB25645A94007AC0DD /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C60E3BCE256334DD007AC0DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C60E3BD1256334DD007AC0DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C60E3BD3256334DD007AC0DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C60E3BF425636567007AC0DD /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		C60E3BF725644C00007AC0DD /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		C60E3BFB25645A94007AC0DD /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		C60E3BB9256334DC007AC0DD = {
 			isa = PBXGroup;
 			children = (
+				C60E3BFA25645A83007AC0DD /* util */,
 				C60E3BC4256334DC007AC0DD /* Muhammad_Weather */,
 				C60E3BC3256334DC007AC0DD /* Products */,
 			);
@@ -56,9 +63,11 @@
 		C60E3BC4256334DC007AC0DD /* Muhammad_Weather */ = {
 			isa = PBXGroup;
 			children = (
+				C60E3BF325636551007AC0DD /* view_model */,
+				C60E3BF12563650C007AC0DD /* model */,
+				C60E3BF025636504007AC0DD /* view */,
 				C60E3BC5256334DC007AC0DD /* AppDelegate.swift */,
 				C60E3BC7256334DC007AC0DD /* SceneDelegate.swift */,
-				C60E3BC9256334DC007AC0DD /* ContentView.swift */,
 				C60E3BCB256334DD007AC0DD /* Assets.xcassets */,
 				C60E3BD0256334DD007AC0DD /* LaunchScreen.storyboard */,
 				C60E3BD3256334DD007AC0DD /* Info.plist */,
@@ -73,6 +82,38 @@
 				C60E3BCE256334DD007AC0DD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C60E3BF025636504007AC0DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C60E3BC9256334DC007AC0DD /* ContentView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C60E3BF12563650C007AC0DD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C60E3BF425636567007AC0DD /* Weather.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C60E3BF325636551007AC0DD /* view_model */ = {
+			isa = PBXGroup;
+			children = (
+				C60E3BF725644C00007AC0DD /* WeatherViewModel.swift */,
+			);
+			path = view_model;
+			sourceTree = "<group>";
+		};
+		C60E3BFA25645A83007AC0DD /* util */ = {
+			isa = PBXGroup;
+			children = (
+				C60E3BFB25645A94007AC0DD /* LocationManager.swift */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60E3BF825644C00007AC0DD /* WeatherViewModel.swift in Sources */,
+				C60E3BF525636567007AC0DD /* Weather.swift in Sources */,
+				C60E3BFC25645A94007AC0DD /* LocationManager.swift in Sources */,
 				C60E3BC6256334DC007AC0DD /* AppDelegate.swift in Sources */,
 				C60E3BC8256334DC007AC0DD /* SceneDelegate.swift in Sources */,
 				C60E3BCA256334DC007AC0DD /* ContentView.swift in Sources */,
